@@ -16,7 +16,7 @@ Be sure to run `go get github.com/brewsync/gobrew`
 
 ### Methods
 
-Currently only listing installed packages is supported. See [examples](#examples) below.
+Currently only listing installed packages and querying an individual package as a go struct are supported. See [examples](#examples) below.
 
 ### Examples
 
