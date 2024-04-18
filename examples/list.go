@@ -22,7 +22,7 @@ func main() {
 	}
 
 	for _, p := range packages {
-		fmt.Println(p.Name)
+		fmt.Printf("%s (%s)\n", p.FullName, p.Versions.Stable)
 	}
 
 	fmt.Printf("Total packages: %d\n", len(packages))
