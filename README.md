@@ -4,6 +4,8 @@ Based on https://github.com/micnncim/homebrew-go, but unmarshaling the structure
 
 [![GoDoc][godoc-badge]][godoc]
 
+`gobrew` requires [Homebrew](https://brew.sh/) be installed and linked, as it uses `brew` under the hood. See [installation instructions](https://docs.brew.sh/Installation) for how to setup Homebrew.
+
 ## Usage
 
 Import the same way as any other Go package:
