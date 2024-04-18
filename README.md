@@ -1,6 +1,6 @@
 # gobrew - Homebrew client package for Go
 
-Based on https://github.com/micnncim/homebrew-go, but unmarshaling the structured JSON output of `brew info`.
+Based loosely on https://github.com/micnncim/homebrew-go, but works by unmarshaling the structured JSON output of `brew info` to Go structs.
 
 [![GoDoc][godoc-badge]][godoc]
 
