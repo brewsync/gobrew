@@ -39,6 +39,6 @@ packages, err := brew.List(ctx)
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 Brewsync Copyright @balintb
