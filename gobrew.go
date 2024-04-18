@@ -13,7 +13,7 @@ const (
 )
 
 type Brew interface {
-	Info(ctx context.Context, name string) (Package, error)
+	Info(ctx context.Context, name string) (*Package, error)
 	List(ctx context.Context) ([]Package, error)
 }
 type brew struct{}
@@ -26,8 +26,19 @@ func New() Brew {
 }
 
 // Info returns information about a package.
-func (b *brew) Info(ctx context.Context, name string) (Package, error) {
-	return Package{}, nil
+func (b *brew) Info(ctx context.Context, name string) (*Package, error) {
+	var packages []Package
+	output, err := b.Exec(ctx, brewInfoCommand, "--json=v1", name)
+	if err != nil {
+		return nil, err
+	}
+
+	err = json.Unmarshal([]byte(output), &packages)
+	if err != nil || len(packages) == 0 {
+		return nil, err
+	}
+
+	return &packages[0], nil
 }
 
 // List returns a list of installed packages.
