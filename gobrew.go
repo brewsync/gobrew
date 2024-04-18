@@ -15,6 +15,7 @@ const (
 type Brew interface {
 	Info(ctx context.Context, name string) (*Package, error)
 	List(ctx context.Context) ([]Package, error)
+	Exec(ctx context.Context, args ...string) (string, error)
 }
 type brew struct{}
 
