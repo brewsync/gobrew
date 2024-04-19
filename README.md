@@ -17,7 +17,11 @@ Import the same way as any other Go package:
 import "github.com/brewsync/gobrew"
 ```
 
-Be sure to run `go get github.com/brewsync/gobrew`
+Be sure to run
+
+```bash
+go get github.com/brewsync/gobrew
+```
 
 ### Methods
 
