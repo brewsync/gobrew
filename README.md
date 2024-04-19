@@ -9,7 +9,7 @@ Based loosely on https://github.com/micnncim/homebrew-go, but works by unmarshal
 ## Usage
 
 > [!CAUTION]
-> This package is in alpha state and not considered production-ready yet. There is a high possibility the interface changes. Please use caution and [report issues](https://github.com/brewsync/gobrew/labels/bug).
+> This package is in alpha state and not considered production-ready yet. It has not been extensively tested with Homebrew for Linux, only MacOS. There is a high possibility the interface will change. Please use caution and [report issues](https://github.com/brewsync/gobrew/labels/bug).
 
 Import the same way as any other Go package:
 
