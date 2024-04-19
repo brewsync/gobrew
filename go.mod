@@ -1,6 +1,6 @@
 module github.com/brewsync/gobrew
 
-go 1.22.2
+go 1.18
 
 replace (
 	github.com/brewsync/gobrew => ../gobrew
