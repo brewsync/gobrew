@@ -1,6 +1,9 @@
 name: Go
 on: [push]
 
+env:
+  HOMEBREW_NO_ANALYTICS: 1
+
 jobs:
   build:
     runs-on: ubuntu-latest
