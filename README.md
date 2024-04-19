@@ -13,7 +13,7 @@ Based loosely on https://github.com/micnncim/homebrew-go, but works by unmarshal
 
 Import the same way as any other Go package:
 
-```
+```go
 import "github.com/brewsync/gobrew"
 ```
 
@@ -27,10 +27,10 @@ Currently only listing installed packages and querying an individual package as 
 
 Check out [examples](examples/) for more, or simply:
 
-```
+```go
 import "github.com/brewsync/gobrew"
 
-...
+//...
 
 brew := gobrew.New()
 ctx, cancel := context.WithTimeout(
@@ -46,4 +46,4 @@ packages, err := brew.List(ctx)
 
 [MIT](LICENSE)
 
-Brewsync Copyright @balintb
+Brewsync Copyright [@balintb](https://balint.click/github)

@@ -58,7 +58,7 @@ func (b *brew) List(ctx context.Context) ([]Package, error) {
 	return packages, nil
 }
 
-// Exec executes a raw Homebrew command. Can be used to run any Homebrew command, though it would be advisable to use the conveniece methods provided by the Brew interface.
+// Exec executes a raw Homebrew command. Can be used to run any Homebrew command, though it would be advisable to use the convenience methods provided by the Brew interface.
 func (b *brew) Exec(ctx context.Context, args ...string) (string, error) {
 	cmd := exec.CommandContext(ctx, brewCommand, args...)
 
