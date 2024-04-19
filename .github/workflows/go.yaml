@@ -19,6 +19,8 @@ jobs:
       - name: Set up Homebrew
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@master
+      - name: Install Homebrew package
+        run: brew install openssl@3
       - name: Build
         run: go build -v ./...
       - name: Test with the Go CLI
