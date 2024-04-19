@@ -2,7 +2,7 @@
 
 Based loosely on https://github.com/micnncim/homebrew-go, but works by unmarshaling the structured JSON output of `brew info` to Go structs.
 
-[![GoDoc][godoc-badge]][godoc]
+[![Go Report Card](https://goreportcard.com/badge/github.com/brewsync/gobrew)](https://goreportcard.com/report/github.com/brewsync/gobrew)
 
 `gobrew` requires [Homebrew](https://brew.sh/) be installed and linked, as it uses `brew` under the hood. See [installation instructions](https://docs.brew.sh/Installation) for how to setup Homebrew.
 
